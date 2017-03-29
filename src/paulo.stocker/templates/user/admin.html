@@ -1,0 +1,16 @@
+{{ define "body" }}
+    <table class="table table-bordered">
+        <tr>
+            <th>Cod.</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        {{ range $key, $value := . }}
+        <tr>
+            <td>{{ $value.ID }}</td>
+            <td>{{ $value.name }}</td>
+            <td>{{ $value.email }}</td>
+        </tr>
+        {{ end }}
+    </table>
+{{ end }}

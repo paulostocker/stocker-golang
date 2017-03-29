@@ -1,4 +1,5 @@
 # Data Folder
 .vscode/
-
+bin/
+pkg/
 # Package Files #
