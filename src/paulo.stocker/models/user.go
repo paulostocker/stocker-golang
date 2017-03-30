@@ -29,7 +29,6 @@ func SelectData() []User {
 
 	rows, err := db.Query("SELECT * FROM user")
 	generic.CheckError(err)
-
 	items := []User{}
 	for rows.Next() {
 		user := User{}
